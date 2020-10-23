@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='WebServices_Hitting_Url_Using_get_As_String'

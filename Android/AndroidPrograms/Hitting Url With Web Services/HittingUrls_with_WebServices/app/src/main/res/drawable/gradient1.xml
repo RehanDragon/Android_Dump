@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--if angle will not be appropriate image will be gone-->
+
+    <gradient
+        android:angle="135"
+        android:endColor="#6D09F7"
+        android:startColor="#AA27FC"
+
+        >
+
+    </gradient>
+
+</shape>

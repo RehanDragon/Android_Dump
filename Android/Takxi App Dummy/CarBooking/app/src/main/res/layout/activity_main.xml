@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/intro"
+    tools:context="com.inducesmile.taxirental.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/colorImage"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="RENT A CAR"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#435b14"
+            android:text="from Induce Car Rental"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textStyle="italic"
+            android:textSize="@dimen/_11sdp"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:text="GET STARTED"
+        android:padding="@dimen/_16sdp"/>
+
+
+</RelativeLayout>

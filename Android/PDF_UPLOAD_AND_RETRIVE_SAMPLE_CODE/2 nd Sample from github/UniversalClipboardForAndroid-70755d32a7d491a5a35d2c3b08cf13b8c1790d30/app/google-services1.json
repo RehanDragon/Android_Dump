@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "634991917076",
+    "firebase_url": "https://pmdfireshow.firebaseio.com",
+    "project_id": "pmdfireshow",
+    "storage_bucket": "pmdfireshow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634991917076:android:ce9076b9d2c6d066",
+        "android_client_info": {
+          "package_name": "com.pramod.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634991917076-3djsgel98g5sas10pbubmivt40r9enfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTvFNEZUDdtKl4s1R_Z1Viw8U1dUX0fnU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

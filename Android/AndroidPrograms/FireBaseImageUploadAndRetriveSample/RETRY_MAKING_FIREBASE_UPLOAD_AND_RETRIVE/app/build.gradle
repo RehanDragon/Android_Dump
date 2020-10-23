@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.usmanisolutions.retry_making_firebase_upload_and_retrive"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+/*   See recycler view detail from here
+https://developer.android.com/jetpack/androidx/releases/recyclerview
+* */
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+
+/* Card View Tuotorial and liabrary link
+https://protocoderspoint.com/recyclerview-with-cardview-android-example-androidx-tutorial/
+*   */
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+
+
+    //picasso working liabrary
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/animated_layout"
+    android:background="@drawable/gradient_list"
+    >
+
+
+
+<RelativeLayout
+
+
+    android:layout_width="401dp"
+    android:layout_height="550dp"
+
+
+
+    >
+<!-- these layouts are only for desining purpose starts from here -->
+
+
+    <!--Ends here-->
+
+
+    <!--this is the linear layout only for Image-->
+    <!--Linear Layout For Image View Ends here-->
+
+    <!--Now Making Layout for Sign up Form-->
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="173dp"
+        android:layout_height="559.9dp"
+        android:layout_marginTop="110dp"
+
+
+        android:layout_marginLeft="188dp"
+        >
+
+        <TextView
+
+            android:textSize="20sp"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="39dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Sign Up"
+            android:textColor="#FFFF"></TextView>
+
+        <TextView
+            android:textColor="#FFFF"
+            android:textSize="10dp"
+            android:text="First Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Input_First_Name"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFF"
+
+            android:textSize="8sp"></EditText>
+
+
+
+
+
+        <TextView
+            android:textColor="#FFFF"
+            android:textSize="10dp"
+            android:text="Last Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Input_Last_Name"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFF"
+
+            android:textSize="8sp"></EditText>
+
+
+
+
+
+
+        <TextView
+            android:textColor="#FFFF"
+            android:textSize="10dp"
+            android:text="User Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Input_User_Name"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFF"
+
+            android:textSize="8sp"></EditText>
+        <!--Email-->
+        <TextView
+            android:textSize="10dp"
+            android:text="Email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            android:textColor="#FFFF"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Input_Email_Address"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textEmailAddress"
+
+            android:textSize="8sp"
+            android:textColor="#FFF"
+
+            ></EditText>
+
+
+        <TextView
+            android:textSize="10dp"
+            android:text="Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            android:textColor="#FFFF"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Input_Password"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+
+            android:inputType="textPassword"
+            android:textSize="8sp"
+            android:textColor="#FFF"
+            ></EditText>
+
+
+
+
+        <TextView
+            android:textSize="10dp"
+            android:text="Retype Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="15dp"
+            android:textColor="#FFFF"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/Retype_Password"
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPassword"
+
+            android:textSize="8sp"
+            android:textColor="#FFF"
+            ></EditText>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+
+            android:background="@drawable/custom_button"
+            android:id="@+id/SignUp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="46dp"
+            android:textSize="8sp"
+            android:textColor="#FFFF"
+            android:text="Sign UP"
+            android:layout_width="90dp"
+            android:layout_height="30sp"
+            ></Button>
+
+
+
+        <Button
+
+            android:background="@drawable/custom_button"
+            android:id="@+id/Login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="46dp"
+            android:textSize="8sp"
+            android:textColor="#FFFF"
+            android:text="Login"
+            android:layout_width="90dp"
+            android:layout_height="30sp"
+            ></Button>
+
+
+        <!--Sign in activity  this is for intent i will put intent on sign in form  -->
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

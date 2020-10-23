@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="RelativeLayout">
+            <attribute name="android:layout_height">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="android:layout_width">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="tools:context">
+                <data type="NMTOKEN"/>
+            </attribute>
+            <oneOrMore>
+                <element name="EditText">
+                    <attribute name="android:hint"/>
+                    <attribute name="android:id"/>
+                    <optional>
+                        <attribute name="android:layout_below"/>
+                    </optional>
+                    <attribute name="android:layout_centerHorizontal">
+                        <data type="boolean"/>
+                    </attribute>
+                    <attribute name="android:layout_height">
+                        <data type="NCName"/>
+                    </attribute>
+                    <optional>
+                        <attribute name="android:layout_marginTop">
+                            <data type="NMTOKEN"/>
+                        </attribute>
+                    </optional>
+                    <attribute name="android:layout_width">
+                        <data type="NMTOKEN"/>
+                    </attribute>
+                </element>
+            </oneOrMore>
+            <element name="Button">
+                <attribute name="android:id"/>
+                <attribute name="android:layout_below"/>
+                <attribute name="android:layout_centerHorizontal">
+                    <data type="boolean"/>
+                </attribute>
+                <attribute name="android:layout_height">
+                    <data type="NCName"/>
+                </attribute>
+                <attribute name="android:layout_width">
+                    <data type="NCName"/>
+                </attribute>
+                <attribute name="android:text">
+                    <data type="NCName"/>
+                </attribute>
+            </element>
+        </element>
+    </start>
+</grammar>

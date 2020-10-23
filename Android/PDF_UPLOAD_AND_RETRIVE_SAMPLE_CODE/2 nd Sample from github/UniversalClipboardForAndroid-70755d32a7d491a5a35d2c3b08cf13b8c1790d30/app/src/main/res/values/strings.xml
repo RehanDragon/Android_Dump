@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ClipIt</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="facebook_app_id">941947429322427</string>
+    <string name="fb_login_protocol_scheme">fb941947429322427</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <item name="clipboard_content" type="id" />
+    <string name="notificationTitle">CloudCopy</string>
+    <string name="notificationMsg">You have a new message</string>
+
+    <array name="menuOptions">
+        <item>Clip It</item>
+        <item>Settings</item>
+    </array>
+</resources>

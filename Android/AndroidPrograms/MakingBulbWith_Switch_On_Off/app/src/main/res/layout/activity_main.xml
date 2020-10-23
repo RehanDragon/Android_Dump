@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Switch
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:thumb="@drawable/sw_thumb"
+        app:track="@drawable/sw_track"
+        android:showText="true"
+        android:id="@+id/switch_on_off"
+        ></Switch>
+
+
+    <ImageView
+        android:id="@+id/imagebulb"
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="110dp"
+
+        ></ImageView>
+
+
+</LinearLayout>

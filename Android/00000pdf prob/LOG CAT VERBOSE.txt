@@ -1,0 +1,25 @@
+07-24 17:08:00.109 18973-18973/com.usmanisolutions.pdf_file_uploader_try_2 E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.usmanisolutions.pdf_file_uploader_try_2, PID: 18973
+    android.content.ActivityNotFoundException:
+ No Activity found to handle Intent { act=android.intent.action.VIEW dat=com.google.android.gms.tasks.zzu@12297d4b }
+        at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1872)
+        at android.app.Instrumentation.execStartActivity(Instrumentation.java:1568)
+        at android.app.Activity.startActivityForResult(Activity.java:3755)
+        at androidx.fragment.app.FragmentActivity.startActivityForResult(FragmentActivity.java:676)
+        at android.app.Activity.startActivityForResult(Activity.java:3716)
+        at androidx.fragment.app.FragmentActivity.startActivityForResult(FragmentActivity.java:663)
+        at android.app.Activity.startActivity(Activity.java:4036)
+        at android.app.Activity.startActivity(Activity.java:3998)
+        at com.usmanisolutions.pdf_file_uploader_try_2.ViewUploadsActivity$1.onItemClick(ViewUploadsActivity.java:80)
+        at android.widget.AdapterView.performItemClick(AdapterView.java:305)
+        at android.widget.AbsListView.performItemClick(AbsListView.java:1146)
+        at android.widget.AbsListView$PerformClick.run(AbsListView.java:3053)
+        at android.widget.AbsListView$3.run(AbsListView.java:3860)
+        at android.os.Handler.handleCallback(Handler.java:739)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:135)
+        at android.app.ActivityThread.main(ActivityThread.java:5343)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:372)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)

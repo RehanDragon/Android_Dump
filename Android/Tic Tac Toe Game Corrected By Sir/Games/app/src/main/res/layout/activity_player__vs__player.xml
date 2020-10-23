@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Player_VS_Player">
+
+    <!--this is my main Linear Layout For Grid-->
+
+    <ImageView
+
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/g"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/layout_for_grid"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="290dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="230dp"
+        >
+        <!--here we will make our  rows for linear layout in horizontal orientation-->
+<!--c = cell-->
+        <!--Row 1-->
+
+        <LinearLayout
+            android:id="@+id/row_1"
+
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="230dp"
+            android:layout_height="75dp"
+        >
+
+            <!--0 row,0 column-->
+            <!--onClick  Jub image view pa click kia gye to run kerdo aik function -->
+            <ImageView
+
+                android:id="@+id/imageView_0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+
+                android:onClick="playerTap"
+                android:tag="0" />
+
+            <!--0 row,1 column-->
+            <ImageView
+                android:layout_marginLeft="49dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_1"
+
+
+                android:onClick="playerTap"
+                android:tag="1"
+                />
+
+            <!--0 row,3 column-->
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="49dp"
+
+                android:onClick="playerTap"
+                android:tag="2"
+                />
+        </LinearLayout>
+
+        <!--Row 2-->
+
+        <LinearLayout
+            android:id="@+id/row_2"
+
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            >
+
+
+            <!--1 row,0 column-->
+            <ImageView
+
+                android:id="@+id/imageView_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:onClick="playerTap"
+                android:tag="3" />
+
+            <!--1 row,1 column-->
+            <ImageView
+
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_4"
+
+                android:layout_marginLeft="49dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="playerTap"
+                android:tag="4" />
+
+            <!--1 row,3 column-->
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_5"
+                android:layout_marginLeft="49dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="playerTap"
+                android:tag="5"  />
+
+
+
+
+
+        </LinearLayout>
+
+        <!--Row 3-->
+
+        <LinearLayout
+            android:id="@+id/row_3"
+
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="230dp"
+            android:layout_height="65dp"
+            >
+
+
+            <!--2 row,0 column-->
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_6"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:onClick="playerTap"
+                android:tag="6" />
+
+            <!--2 row,1 column-->
+            <ImageView
+
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_7"
+                android:layout_marginLeft="49dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="playerTap"
+                android:tag="7" />
+
+            <!--3 row,3 column-->
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView_8"
+                android:layout_marginLeft="49dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:onClick="playerTap"
+                android:tag="8"  />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+
+
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_for_grid"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="29dp"
+        android:text="Player 1 Turn "
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

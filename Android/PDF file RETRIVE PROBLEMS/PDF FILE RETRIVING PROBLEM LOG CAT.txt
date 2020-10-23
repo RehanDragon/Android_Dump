@@ -1,0 +1,43 @@
+07-21 22:27:35.560 31434-31434/? I/art: Late-enabling -Xcheck:jni
+07-21 22:27:35.645 31434-31442/? E/art: Failed sending reply to debugger: Broken pipe
+07-21 22:27:35.645 31434-31442/? I/art: Debugger is no longer active
+07-21 22:27:35.687 31434-31434/? I/FirebaseInitProvider: FirebaseApp initialization successful
+07-21 22:27:35.749 31434-31434/? W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+07-21 22:27:35.789 31434-31434/? I/art: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>
+07-21 22:27:35.790 31434-31434/? I/art: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>
+07-21 22:27:35.920 31434-31455/? D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+07-21 22:27:35.932 31434-31434/? D/Atlas: Validating map...
+07-21 22:27:35.997 31434-31455/? I/Adreno-EGL: <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.AF.1.1_RB1.05.00.02.006.020_msm8960_LA.AF.1.1_RB1__release_AU ()
+    OpenGL ES Shader Compiler Version: E031.25.03.06
+    Build Date: 03/30/15 Mon
+    Local Branch: mybranch8688311
+    Remote Branch: quic/LA.AF.1.1_rb1.16
+    Local Patches: NONE
+    Reconstruct Branch: AU_LINUX_ANDROID_LA.AF.1.1_RB1.05.00.02.006.020 + 9b2699f + 2215637 + 60aa592 + f2362e6 + 5c64f59 + 82411a1 + 1f36e07 +  NOTHING
+07-21 22:27:35.999 31434-31455/? I/OpenGLRenderer: Initialized EGL, version 1.4
+07-21 22:27:36.025 31434-31455/? D/OpenGLRenderer: Enabling debug mode 0
+07-21 22:29:17.580 31434-31434/com.usmanisolutions.pdf_upload_anrd_retrive_try_3 D/AndroidRuntime: Shutting down VM
+07-21 22:29:17.581 31434-31434/com.usmanisolutions.pdf_upload_anrd_retrive_try_3 E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.usmanisolutions.pdf_upload_anrd_retrive_try_3, PID: 31434
+    android.content.ActivityNotFoundException: No Activity found to handle Intent { dat=com.google.android.gms.tasks.zzu@21fe0f8e }
+        at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1872)
+        at android.app.Instrumentation.execStartActivity(Instrumentation.java:1568)
+        at android.app.Activity.startActivityForResult(Activity.java:3755)
+        at androidx.fragment.app.FragmentActivity.startActivityForResult(FragmentActivity.java:676)
+        at android.app.Activity.startActivityForResult(Activity.java:3716)
+        at androidx.fragment.app.FragmentActivity.startActivityForResult(FragmentActivity.java:663)
+        at android.app.Activity.startActivity(Activity.java:4036)
+        at android.app.Activity.startActivity(Activity.java:3998)
+        at com.usmanisolutions.pdf_upload_anrd_retrive_try_3.ViewUploadsActivity$1.onItemClick(ViewUploadsActivity.java:44)
+        at android.widget.AdapterView.performItemClick(AdapterView.java:305)
+        at android.widget.AbsListView.performItemClick(AbsListView.java:1146)
+        at android.widget.AbsListView$PerformClick.run(AbsListView.java:3053)
+        at android.widget.AbsListView$3.run(AbsListView.java:3860)
+        at android.os.Handler.handleCallback(Handler.java:739)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:135)
+        at android.app.ActivityThread.main(ActivityThread.java:5343)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:372)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)

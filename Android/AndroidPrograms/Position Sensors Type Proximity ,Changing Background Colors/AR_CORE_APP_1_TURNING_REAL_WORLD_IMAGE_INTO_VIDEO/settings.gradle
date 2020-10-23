@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='AR_CORE_APP_1_TURNING_REAL_WORLD_IMAGE_INTO_VIDEO'

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Practice_Reviewing_Android_Even_Odd_Calculator_Making"

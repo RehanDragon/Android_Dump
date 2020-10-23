@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#413F3F"
+
+    >
+
+<!--in background tint my color is changing-->
+    <LinearLayout
+        android:id="@+id/layout_1"
+
+        android:layout_width="321.5dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="21dp"
+
+        android:background="#000000"
+android:backgroundTint="#413F3F"
+
+    >
+
+        <!--  GUIDE TAKEN FROM STACK OVER FLOW TO REMOVE ANDROID BUILTIN KEYBOARD
+
+
+
+        About windowSoftInputMode
+
+There's yet another point of contention to be aware of. By default, Android will automatically assign initial focus to the first EditText or focusable control in your Activity. It naturally follows that the InputMethod (typically the soft keyboard) will respond to the focus event by showing itself. The windowSoftInputMode attribute in AndroidManifest.xml, when set to stateAlwaysHidden, instructs the keyboard to ignore this automatically-assigned initial focus.
+
+<activity
+    android:name=".MyActivity"
+    android:windowSoftInputMode="stateAlwaysHidden"/>
+Almost unbelievably, it appears to do nothing to prevent the keyboard from opening when you touch the control (unless focusable="false" and/or focusableInTouchMode="false" are assigned to the control). Apparently, the windowSoftInputMode setting applies only to automatic focus events, not to focus events triggered by touch events.
+
+Therefore, stateAlwaysHidden is VERY poorly named indeed. It should perhaps be called ignoreInitialFocus instead.
+
+
+
+
+
+        -->
+
+
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+
+
+            android:textSize="28dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+
+
+
+            android:textColor="#FFF"
+
+            android:textAlignment="textEnd"
+            android:layout_width="321.5dp"
+            android:layout_height="105dp"
+            android:id="@+id/ed_txt_display">
+
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/layout_1"
+       android:orientation="horizontal"
+        android:id="@+id/bnt_line_1_horizontal"
+
+android:layout_marginLeft="21dp"
+        android:layout_width="240dp"
+        android:layout_height="82.5dp"
+        android:background="#000"
+>
+<Button
+    android:textSize="16dp"
+    android:id="@+id/btn_clear"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="#1F1D1D"
+    android:text="C"
+    android:textColor="#FFFFFF"
+
+
+></Button>
+
+        <Button
+            android:textSize="16dp"
+            android:id="@+id/btn_plus"
+            android:layout_marginLeft="2dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#1F1D1D"
+            android:text="+"
+            android:textColor="#FFF"
+            ></Button>
+        <Button
+            android:textSize="16dp"
+            android:id="@+id/btn_minus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#1F1D1D"
+            android:layout_marginLeft="2dp"
+            android:text="-"
+            android:textColor="#FFF"
+
+            ></Button>
+
+    </LinearLayout>
+
+
+
+
+    <!--second horizontal layout-->
+
+    <LinearLayout
+        android:layout_below="@+id/bnt_line_1_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/btn_line_2_horizontal"
+        android:layout_marginLeft="21dp"
+
+        android:layout_width="240dp"
+        android:layout_height="82.5dp"
+        android:background="#000"
+
+>
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+
+
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_marginLeft="2dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="8"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            ></Button>
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:layout_marginLeft="2dp"
+            android:text="9"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+    <!--third horizontal line-->
+    <LinearLayout
+        android:layout_below="@+id/btn_line_2_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/btn_line_3_horizontal"
+        android:layout_marginLeft="21dp"
+
+        android:layout_width="240dp"
+        android:layout_height="82.5dp"
+        android:background="#000"
+> <!--from here we will add our buttons-->
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+
+
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_marginLeft="2dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="5"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            ></Button>
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:layout_marginLeft="2dp"
+            android:text="6"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+
+            ></Button>
+    </LinearLayout>
+
+
+    <!--fourth horizontal button line-->
+    <LinearLayout
+        android:layout_below="@+id/btn_line_3_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/btn_line_4_horizontal"
+        android:layout_marginLeft="21dp"
+
+        android:layout_width="240dp"
+        android:layout_height="82.5dp"
+        android:background="#000"
+>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+
+
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_marginLeft="2dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="2"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            ></Button>
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:layout_marginLeft="2dp"
+            android:text="3"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+
+            ></Button>
+
+    </LinearLayout>
+
+
+
+    <!--fifth horizontal button line-->
+
+    <LinearLayout
+        android:layout_below="@+id/btn_line_4_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/btn_line_5_horizontal"
+        android:layout_marginLeft="21dp"
+
+
+        android:layout_width="240dp"
+        android:layout_height="82.5dp"
+        android:background="#000"
+>
+        <!--from here we will add our buttons-->
+        <Button
+            android:id="@+id/btn_0"
+
+
+            android:layout_width="162dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            ></Button>
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#262626"
+            android:layout_marginLeft="2dp"
+            android:text="."
+            android:textColor="#FFF"
+            android:textSize="16dp"
+
+            ></Button>
+
+
+
+
+    </LinearLayout>
+
+    <!--vertical line buttons-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="261dp"
+        android:layout_below="@+id/layout_1"
+        android:layout_width="82dp"
+        android:layout_height="413dp"
+        android:background="#000"
+
+>
+        <!--here we will add button -->
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="#1F1D1D"
+            android:text="X"
+            android:textColor="#FFF"
+            android:textSize="16dp">
+
+        </Button>
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btn_devide"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#1F1D1D"
+            android:layout_marginTop="2dp"
+            android:text="/"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            >
+
+        </Button>
+
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btn_equal"
+            android:layout_width="80dp"
+            android:layout_height="247dp"
+            android:background="#EE6708"
+            android:layout_marginTop="2dp"
+            android:text="="
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            >
+
+        </Button>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

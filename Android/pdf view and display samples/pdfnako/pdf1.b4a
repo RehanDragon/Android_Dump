@@ -1,0 +1,78 @@
+﻿Version=4
+IconFile=
+NumberOfModules=0
+Build1=Default,b4a.example
+DoNotOverwriteManifest=False
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.basic4ppc.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="14"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~SetApplicationAttribute(android:theme, "@android:style/Theme.Holo")~\n~'End of default text.~\n~
+NumberOfFiles=2
+File1=Sample pdf.pdf
+File2=viewpdf.bal
+NumberOfLibraries=2
+Library1=core
+Library2=b4apdfviewer
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: B4A Example
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+
+End Sub
+
+Sub Globals
+     	Dim pdfv As PDFViewer
+Dim i,pc As Int=0
+Dim iv
+	Private Panel1 As Panel
+	Private btnZoomIn As Button
+	Private btnZoomOut As Button
+	Dim zoom = 1.0 As Double
+	Private Label1 As Label
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+Activity.LoadLayout("viewPDF")
+   Activity.Title = "View PDF - Lyndon Bermoy"
+	Panel1.Left = 0%x
+	Panel1.Top = 10%y
+	Panel1.Width= 100%x
+	Panel1.Height = 100%y
+
+	pdfv.init
+	Panel1.AddView(pdfv,0,0,-1,-1)
+	File.Copy(File.DirAssets,"Sample pdf.pdf",File.DirRootExternal,"Sample pdf.pdf")
+	pdfv.getpdf(File.DirRootExternal&"/Sample pdf.pdf")
+	
+	If pdfv.isValid Then
+		Log("pagecount:" & pdfv.GetPageCount)
+		Label1.Text =  "Page: " & pdfv.GetPageCount 
+		pdfv.scrollToPage(0)
+		pc=pdfv.GetPageCount
+		Log("pc:"&pc)
+		pdfv.zoom(zoom)
+	Else
+		Msgbox("Error pdf file!","Error")
+		Activity.Finish
+		Return
+	End If
+End Sub
+
+Sub btnZoomIn_Click
+	zoom=zoom + 0.5
+	pdfv.zoom(zoom)
+End Sub
+Sub btnZoomOut_Click
+	zoom=zoom - 0.5
+	pdfv.zoom(zoom)
+End Sub

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewUploadsActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:id="@+id/layout_for_list_view"
+        >
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_for_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        >
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

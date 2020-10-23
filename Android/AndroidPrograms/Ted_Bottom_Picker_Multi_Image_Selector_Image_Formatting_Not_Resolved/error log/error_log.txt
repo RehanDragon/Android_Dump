@@ -1,0 +1,8 @@
+ERROR 1
+
+I/art: Clamp target GC heap from 109MB to 96MB
+W/OpenGLRenderer: Bitmap too large to be uploaded into a texture (2432x4320, max=4096x4096)
+W/OpenGLRenderer: Bitmap too large to be uploaded into a texture (2432x4320, max=4096x4096)
+    Bitmap too large to be uploaded into a texture (2432x4320, max=4096x4096)
+    Bitmap too large to be uploaded into a texture (2432x4320, max=4096x4096)
+    Bitmap too large to be uploaded into a texture (2432x4320, max=4096x4096)

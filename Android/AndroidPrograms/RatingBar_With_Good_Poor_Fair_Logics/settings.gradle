@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='RatingBar_With_Good_Poor_Fair_Logics'

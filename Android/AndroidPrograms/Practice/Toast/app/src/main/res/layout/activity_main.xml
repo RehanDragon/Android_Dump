@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text_for_Toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me To view Toast on Text , Toast is Basically the alert Message"
+        android:layout_centerInParent="true"
+         />
+
+
+    <Button
+        android:text="Button Toast"
+        android:id="@+id/Button_For_Toast"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/Text_for_Toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+></Button>
+
+
+</RelativeLayout>

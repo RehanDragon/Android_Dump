@@ -1,0 +1,86 @@
+package com.example.marksheet_;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText edeng , edurdu , edphy , edche,edname;
+    private Button  btn;
+    private TextView txtobt ,txtper ,txtgrade;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btn = (Button) findViewById(R.id.btn);
+        edeng = (EditText) findViewById(R.id.eng);
+        edname = (EditText) findViewById(R.id.name);
+        edurdu = (EditText) findViewById(R.id.urdu);
+        edphy = (EditText) findViewById(R.id.phy);
+        edche = (EditText) findViewById(R.id.che);
+        txtobt = (TextView) findViewById(R.id.obt);
+        txtper = (TextView) findViewById(R.id.percentage);
+        txtgrade = (TextView) findViewById(R.id.grade);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                float eng_ = Float.parseFloat(edeng.getText().toString());
+                float urdu_ = Float.parseFloat(edurdu.getText().toString());
+                float che_ = Float.parseFloat(edche.getText().toString());
+                float phy_ = Float.parseFloat(edphy.getText().toString());
+
+               float obt_ = Obt_marks(eng_, urdu_ , che_ , phy_);
+              float per_ = percentage_(obt_);
+            String grade  = grade(per_);
+            txtobt.setText(String.valueOf(obt_));
+            txtgrade.setText(String.valueOf(grade));
+            txtper.setText(String.valueOf(per_));
+           
+            }
+        });
+
+    }
+
+    private static float Obt_marks(float a, float b, float c , float d){
+
+        float sum = a+b+c+d;
+        return sum;
+
+    }
+    private static float percentage_(float p ){
+        float per = (p/400)*100;
+        return per;
+
+    }
+    private static String grade(float p){
+        String g = "Fail";
+        if(p <=100 && p>=80){
+            g = "A+";
+        }
+        else if(p <=79 && p>=70){
+            g = "A";
+        }
+
+        else if(p <=69 && p>=60){
+            g = "B";
+        }
+
+        else if(p <=59 && p>=50){
+            g = "C";
+        }
+        else{
+
+            g="Fail";
+        }
+        return  g;
+    }
+
+}

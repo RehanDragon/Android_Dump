@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:id="@+id/Main_Linear_Layout"
+
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+
+        >
+        <!--My Sub Linear Layout 1-->
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="25dp"
+           android:orientation="horizontal"
+           android:id="@+id/Sub_Linear_Layout_1_In_MLL"
+           android:layout_width="290dp"
+           android:layout_height="100dp"
+>
+
+         <!--Now Making Layout for My Menu -->
+
+           <LinearLayout
+               android:id="@+id/Linear_Layout_1_For_Menu"
+               android:orientation="horizontal"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_width="130dp"
+               android:layout_height="90dp"
+           >
+              <!--TextView For My Menu-->
+
+               <TextView
+                   android:id="@+id/txt_MENU"
+                   android:text="MENU"
+                   android:textAlignment="center"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="110dp"
+                   android:layout_height="70dp"
+                   ></TextView>
+
+
+           </LinearLayout>
+
+
+           <!--Now Making Another Choice Box -->
+
+           <LinearLayout
+               android:id="@+id/Linear_Layout_2_For_CUSTOM_TEXT_1"
+               android:orientation="horizontal"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_width="130dp"
+               android:layout_height="90dp"
+               >
+               <!--TextView For My Menu-->
+
+               <TextView
+                   android:id="@+id/txt_CUSTOM_TEXT_1"
+                   android:text="CUSTOM_TEXT"
+                   android:textAlignment="center"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="110dp"
+                   android:layout_height="70dp"
+                   ></TextView>
+
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+        <!--My Sub Linear Layout 2 -->
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:id="@+id/Sub_Linear_Layout_2_In_MLL"
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            >
+
+            <!--Now Making Layout for My Menu -->
+
+            <LinearLayout
+                android:id="@+id/Linear_Layout_1_For_CUSTOM_TEXT_2"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                >
+                <!--TextView For My Menu-->
+
+                <TextView
+                    android:id="@+id/txt_CUSTOM_TEXT_2"
+                    android:text="CUSTOM_TEXT_2"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+
+            <!--Now Making Another Choice Box -->
+
+            <LinearLayout
+                android:id="@+id/Linear_Layout_2_For_CUSTOM_TEXT_3"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                >
+                <!--TextView For My Menu-->
+
+                <TextView
+                    android:id="@+id/txt_CUSTOM_TEXT_3"
+                    android:text="CUSTOM_TEXT_3"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>

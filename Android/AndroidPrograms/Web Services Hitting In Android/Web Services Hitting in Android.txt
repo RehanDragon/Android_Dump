@@ -1,0 +1,97 @@
+package com.example.netwroking_;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
+import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONArrayRequestListener;
+import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.androidnetworking.interfaces.StringRequestListener;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class MainActivity extends AppCompatActivity {
+private Button btn;
+private EditText ed;
+private TextView t , t1,t2 ;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        AndroidNetworking.initialize(getApplicationContext());
+
+       ed= (EditText) findViewById(R.id.ed);
+        btn = (Button) findViewById(R.id.btn);
+        t = (TextView) findViewById(R.id.data);
+ t1 = (TextView) findViewById(R.id.data1);
+ t2 = (TextView) findViewById(R.id.data2);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String val = ed.getText().toString();
+AndroidNetworking.get("https://fierce-cove-29863.herokuapp.com/getAnUserDetail/"+val)
+        .setPriority(Priority.HIGH)
+        .build()
+//        .getAsString(new StringRequestListener() {
+//            @Override
+//            public void onResponse(String response) {
+//
+//                t.setText(response);
+//
+//
+//
+//            }
+//
+//            @Override
+//            public void onError(ANError anError) {
+//
+//            }
+//        });
+
+.getAsJSONObject(new JSONObjectRequestListener() {
+    @Override
+    public void onResponse(JSONObject response) {
+
+        try {
+            t.setText(response.getString("id"));
+            t1.setText(response.getString("firstname"));
+            t2.setText(response.getString("lastname"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+//        try {
+//            Log.i("my_data", response.getString("firstname").toString());
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+
+    }
+
+    @Override
+    public void onError(ANError anError) {
+
+    }
+});
+
+            }
+        });
+
+
+
+
+
+    }
+}

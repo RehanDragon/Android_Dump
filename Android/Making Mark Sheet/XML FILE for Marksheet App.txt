@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="30dp"></TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/engtxt"
+        android:layout_below="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English:"
+        android:textSize="30dp"></TextView>
+
+    <EditText
+        android:id="@+id/eng"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="17dp"></EditText>
+
+    <TextView
+        android:id="@+id/urdutxt"
+        android:layout_below="@+id/engtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urdu:"
+        android:textSize="30dp"></TextView>
+
+    <EditText
+        android:id="@+id/urdu"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/eng"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="17dp"></EditText>
+
+
+    <TextView
+        android:id="@+id/phytxt"
+        android:layout_below="@+id/urdutxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physics:"
+        android:textSize="30dp"></TextView>
+
+    <EditText
+        android:id="@+id/phy"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/urdu"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="17dp"></EditText>
+
+    <TextView
+        android:id="@+id/chetxt"
+        android:layout_below="@+id/phytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chemistry:"
+        android:textSize="30dp"></TextView>
+
+    <EditText
+        android:id="@+id/che"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/phy"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="14dp"></EditText>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_below="@+id/che"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Generate marks sheet"
+
+        ></Button>
+    <TextView
+        android:id="@+id/obt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Obtained Marks:"
+        android:layout_below="@id/btn"
+        android:textSize="30dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/obt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:layout_below="@id/obt_txt"
+        android:textSize="30dp"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/Percentage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage :"
+        android:layout_below="@id/obt"
+        android:textSize="30dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:layout_below="@id/Percentage_txt"
+        android:textSize="30dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/grade_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:layout_below="@id/percentage"
+        android:textSize="30dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:layout_below="@id/grade_txt"
+        android:textSize="30dp"
+        ></TextView>
+
+</RelativeLayout>

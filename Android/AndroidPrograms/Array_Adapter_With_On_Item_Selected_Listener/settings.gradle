@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Array_Adapter_With_On_Item_Selected_Listener'

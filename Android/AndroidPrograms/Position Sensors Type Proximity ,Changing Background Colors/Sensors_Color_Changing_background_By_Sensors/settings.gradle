@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Sensors_Color_Changing_background_By_Sensors'

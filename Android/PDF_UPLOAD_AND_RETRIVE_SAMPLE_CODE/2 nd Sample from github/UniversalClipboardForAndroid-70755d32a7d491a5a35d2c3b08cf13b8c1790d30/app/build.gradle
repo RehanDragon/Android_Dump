@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.pramod.firebase"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Firebase core dependency
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+
+    //Firebase Authentication dependency
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+
+    //Firebase Database dependency
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+
+    //Firebase FCM
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //Facebook dependency
+    implementation 'com.facebook.android:facebook-login:4.38.0'
+
+
+    implementation 'com.jaredrummler:android-device-names:1.0.9'
+
+    //Firebase Storage dependency
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+
+    implementation 'nl.psdcompany:duo-navigation-drawer:2.0.8'
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

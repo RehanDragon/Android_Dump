@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:completionThreshold="1"
+        ></AutoCompleteTextView>
+
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:text="Apple"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        ></CheckBox>
+
+
+    <CheckBox
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c1"
+        android:text="Banana"
+        android:textSize="25sp"
+        ></CheckBox>
+
+    <CheckBox
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c2"
+        android:text="Mango"
+        android:textSize="25sp"
+        ></CheckBox>
+    <Button
+        android:id="@+id/btn"
+
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/c3"
+        android:text="Submit"
+        ></Button>
+    <Switch
+        android:id="@+id/swtich1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        ></Switch>
+    <TextView
+        android:id="@+id/change"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swtich1"
+        android:textSize="30sp"
+
+        ></TextView>
+</RelativeLayout>

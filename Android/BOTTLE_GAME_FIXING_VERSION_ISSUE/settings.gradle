@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='BOTTLE_GAME_FIXING_VERSION_ISSUE'

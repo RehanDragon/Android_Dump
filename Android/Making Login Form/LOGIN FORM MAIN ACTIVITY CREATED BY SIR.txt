@@ -1,0 +1,74 @@
+package com.example.demo_;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText et , et1;
+
+    private Button btn ;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    //binding
+       btn= (Button) findViewById(R.id.btn_lgoin);
+       et= (EditText) findViewById(R.id.name);
+       et1= (EditText) findViewById(R.id.pass);
+
+
+
+
+      btn.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+
+              String name  = et.getText().toString();
+              String pass  = et1.getText().toString();
+        Boolean confirm = verify(name , pass);
+        if(confirm == true){
+
+            Toast.makeText(getApplicationContext(),
+                    "login successfully" ,
+                    Toast.LENGTH_SHORT).show();
+
+        }else{
+            Toast.makeText(getApplicationContext(),
+                    "Try again .. !" +
+                            "" ,
+                    Toast.LENGTH_SHORT).show();
+
+
+        }
+
+
+
+          }
+      });
+
+    }
+    private static Boolean verify(String n  , String p){
+
+        if (n.equals("jawad") && p.equals("0342")) {
+            Log.d("data12", "verify: "+n+" ddasd"+p);
+            return true;
+        }
+        return false;
+
+
+
+    }
+
+
+}

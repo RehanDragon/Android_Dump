@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "892299484313",
+    "firebase_url": "https://experiment-62b2d.firebaseio.com",
+    "project_id": "experiment-62b2d",
+    "storage_bucket": "experiment-62b2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892299484313:android:acd685a2e1f338b002ac08",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.retry_making_firebase_upload_and_retrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892299484313-8mufdhannuj141q73tl43o8c0thr3gr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-TiUR61Xuk7xu9zsY33XKkJ_FtHLQmzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892299484313-8mufdhannuj141q73tl43o8c0thr3gr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

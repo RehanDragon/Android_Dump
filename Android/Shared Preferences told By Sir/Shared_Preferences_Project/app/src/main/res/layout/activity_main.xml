@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="170dp"
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+         />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:layout_below="@+id/user_enter"
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
+
+    <EditText
+        android:id="@+id/user_enter"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pass"
+        android:id="@+id/enter_pass"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+    ></EditText>
+
+    <Button
+        android:id="@+id/remember_me"
+        android:text="remember me"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/enter_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+    <Button
+        android:id="@+id/show_details"
+        android:text="show details"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+    <TextView
+        android:id="@+id/data_display"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/show_details"
+        android:text="SHOW DATA"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+
+</RelativeLayout>

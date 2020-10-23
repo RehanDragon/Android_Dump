@@ -1,0 +1,15 @@
+https://jsonplaceholder.typicode.com/posts
+
+
+
+
+https://reqres.in/
+
+
+
+https://any-api.com/
+
+
+
+
+https://petstore.swagger.io/

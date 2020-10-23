@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num1:"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+         />
+
+    <TextView
+        android:id="@+id/txt_num2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_num1"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Num2:" />
+
+
+
+    <TextView
+        android:id="@+id/txt_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_num2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="ANS:" />
+
+    <EditText
+        android:id="@+id/ed_txt_num1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+    ></EditText>
+
+
+    <EditText
+        android:id="@+id/ed_txt_num2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ed_txt_num1"
+        ></EditText>
+
+    <EditText
+        android:layout_below="@+id/ed_txt_num2"
+        android:id="@+id/ed_txt_ans"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="177dp"
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/txt_num1"
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    ></Button>
+
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@+id/txt_num1"
+        android:text="SUB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+
+
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/txt_num1"
+        android:text="MUL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="290dp"
+        android:layout_below="@+id/txt_num1"
+        android:text="DIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

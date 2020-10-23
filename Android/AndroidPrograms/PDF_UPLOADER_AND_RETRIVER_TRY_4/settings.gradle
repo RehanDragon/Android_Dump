@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='PDF_UPLOADER_AND_RETRIVER_TRY_4'

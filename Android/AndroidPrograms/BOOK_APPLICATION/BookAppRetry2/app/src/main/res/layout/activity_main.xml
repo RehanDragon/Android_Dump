@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pgCurlContainer"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+<!--
+GUIDE
+http://findnerd.com/list/view/Page-Curl-Effect-in-android/21757/
+-->
+
+<!--  background lgana zarure ha   -->
+
+
+    <app.num.numandroidpagecurleffect.PageCurlView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/pagecurl_view"
+
+        android:background="@drawable/abc"/>
+
+
+
+
+
+    <!--<app.num.numandroidpagecurleffect.PageCurlView
+        android:id="@+id/pageCurlView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        ></app.num.numandroidpagecurleffect.PageCurlView>-->
+
+
+</LinearLayout>

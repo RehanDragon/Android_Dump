@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:background="@null"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/device_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle">
+
+        <ImageView
+            android:id="@+id/device_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/smartphone" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/device_image"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="Device Name"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/ip_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/device_name"
+            android:layout_toRightOf="@id/device_image"
+            android:text="IP Name"
+            android:textSize="15dp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/device_details"
+        android:checked="true"
+        android:textColor="#0099CC"
+        android:textOff="OFF"
+        android:textOn="ON" />
+    <!--<ImageView-->
+    <!--android:id="@+id/delete"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_toRightOf="@+id/device_details"-->
+    <!--android:layout_below="@+id/toogle"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:src="@drawable/baseline_delete_black_18dp" />-->
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSwitch"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/device_details"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:src="@drawable/bin"
+        android:text="Delete"
+        android:textColor="#0099CC" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="#ff9200" />
+</RelativeLayout>

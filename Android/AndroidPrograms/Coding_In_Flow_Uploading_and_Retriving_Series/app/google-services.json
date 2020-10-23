@@ -1,0 +1,193 @@
+{
+  "project_info": {
+    "project_number": "140508445509",
+    "firebase_url": "https://login-integratio-1583644536788.firebaseio.com",
+    "project_id": "login-integratio-1583644536788",
+    "storage_bucket": "login-integratio-1583644536788.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:fe607b06202f40fce91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.authentication_using_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-53r61au7nhrffujla79jhtm71a7qcdci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usmanisolutions.authentication_using_firebase",
+            "certificate_hash": "089e7920202dad81fa12825fecc1a248af9dafa3"
+          }
+        },
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:3bdbdfedd7ce5893e91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.coding_in_flow_uploading_and_retriving_series"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:d20969308790c7b1e91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.filemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:8b146910a39ccbe6e91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.pdf_file_uploader_try_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:f00d11fa833f8098e91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.pdf_upload_anrd_retrive_try_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140508445509:android:e1904f99282ddb72e91c2c",
+        "android_client_info": {
+          "package_name": "com.usmanisolutions.pdf_uploader_and_retriver_try_4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbM-ECdl7Qezj3hmEkcLlTXlb1_xV6e3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140508445509-1si46rfnno87o5piah21vjvik0v14htl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

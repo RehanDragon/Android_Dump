@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <AutoCompleteTextView
+        android:id="@+id/search12"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:completionThreshold="1"
+        ></AutoCompleteTextView>
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/search12"
+        ></CheckBox>
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banana"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/check1"
+
+        ></CheckBox>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:layout_below="@+id/check2"
+        ></Button>
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+></Switch>
+    <TextView
+        android:id="@+id/st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_below="@+id/sw"
+        ></TextView>
+</RelativeLayout>

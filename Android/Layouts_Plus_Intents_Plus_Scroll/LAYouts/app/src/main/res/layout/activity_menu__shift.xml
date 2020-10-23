@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Shift">
+<!--I am using Relative Layout because i want to use blow -->
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="720dp"
+    >
+
+
+      <!--Main First Main LinearLayout Selection -->
+        <!--My First LinearLayout Selection Is in horizontal orientation-->
+   <LinearLayout
+       
+       android:orientation="horizontal"
+       android:id="@+id/Linear_Layout_Option_1"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="290dp"
+       android:layout_height="150dp"
+       >
+
+       <!--Making Linear Layout For ImageView -->
+       <LinearLayout
+           android:orientation="vertical"
+           android:id="@+id/Linear_Layout_For_Image_View_For_Option_1"
+           android:layout_marginLeft="9dp"
+           android:layout_marginTop="20dp"
+           android:layout_width="125dp"
+           android:layout_height="90dp"
+       >
+         <!--Image View For My Item-->
+           <ImageView
+               android:id="@+id/Image_View_For_Option_1"
+               android:layout_width="100dp"
+               android:layout_height="70dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/briyani"></ImageView>
+
+
+
+
+       </LinearLayout> <!--Linear Layout For Image View Ended-->
+
+       <!--Making Linear Layout for TextView Item Name-->
+       <LinearLayout
+           android:orientation="vertical"
+           android:id="@+id/Layout_For_Item_Description_1"
+           android:layout_width="100dp"
+           android:layout_height="90dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp">
+           
+        <!--TextView for Item 1 In item_name_1-->
+           <TextView
+               android:id="@+id/item_name_1"
+               android:layout_width="70dp"
+               android:layout_height="15dp"
+               android:layout_marginLeft="2dp"
+               android:layout_marginTop="7dp"
+               android:text="Briyani"
+               android:textSize="10sp"
+
+               ></TextView>
+           
+           <!--Text View For Price-->
+           <TextView
+               android:textSize="10sp"
+               android:text="Price: 50 RS"
+               android:layout_marginTop="2dp"
+               android:layout_marginLeft="2dp"
+               android:id="@+id/price_for_item_name_1"
+               android:layout_width="70dp"
+               android:layout_height="15dp"
+               ></TextView>
+           
+           <!--Making TextView for Description-->
+           <TextView
+               android:id="@+id/item_description_1"
+               android:textSize="10sp"
+               android:text="Description"
+               android:layout_marginLeft="2dp"
+               android:layout_width="90dp"
+               android:layout_height="45dp"
+           ></TextView>
+
+       </LinearLayout>
+
+
+   </LinearLayout> <!--This is my First Main Linear Layout Ended-->
+
+
+        <!--My Second Main LinearLayout Selection -->
+
+        <LinearLayout
+            android:layout_below="@+id/Linear_Layout_Option_1"
+
+            android:orientation="horizontal"
+            android:id="@+id/Linear_Layout_Option_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            >
+
+            <!--Making Linear Layout For ImageView -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Linear_Layout_For_Image_View_For_Option_2"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="125dp"
+                android:layout_height="90dp"
+                >
+                <!--Image View For My Item-->
+                <ImageView
+                    android:id="@+id/Image_View_For_Option_2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tikka"></ImageView>
+
+
+
+
+            </LinearLayout> <!--Linear Layout For Image View Ended-->
+
+            <!--Making Linear Layout for TextView Item Name-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Layout_For_Item_Description_2"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <!--TextView for Item 1 In item_name_1-->
+                <TextView
+                    android:id="@+id/item_name_2"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Tikka"
+                    android:textSize="10sp"
+
+                    ></TextView>
+
+                <!--Text View For Price-->
+                <TextView
+                    android:textSize="10sp"
+                    android:text="Price: 40 RS"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/price_for_item_name_2"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    ></TextView>
+
+                <!--Making TextView for Description-->
+                <TextView
+                    android:id="@+id/item_description_2"
+                    android:textSize="10sp"
+                    android:text="Description"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout> <!--My Second Main LinearLayout Ends Here-->
+
+
+
+        <!--My Third Main LinearLayout Selection -->
+        <LinearLayout
+            android:layout_below="@+id/Linear_Layout_Option_2"
+
+            android:orientation="horizontal"
+            android:id="@+id/Linear_Layout_Option_3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            >
+
+            <!--Making Linear Layout For ImageView -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Linear_Layout_For_Image_View_For_Option_3"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="125dp"
+                android:layout_height="90dp"
+                >
+                <!--Image View For My Item-->
+                <ImageView
+                    android:id="@+id/Image_View_For_Option_3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/karhai"></ImageView>
+
+
+
+
+            </LinearLayout> <!--Linear Layout For Image View Ended-->
+
+            <!--Making Linear Layout for TextView Item Name-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Layout_For_Item_Description_3"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <!--TextView for Item 1 In item_name_1-->
+                <TextView
+                    android:id="@+id/item_name_3"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Karhai"
+                    android:textSize="10sp"
+
+                    ></TextView>
+
+                <!--Text View For Price-->
+                <TextView
+                    android:textSize="10sp"
+                    android:text="Price:150 RS"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/price_for_item_name_3"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    ></TextView>
+
+                <!--Making TextView for Description-->
+                <TextView
+                    android:id="@+id/item_description_3"
+                    android:textSize="10sp"
+                    android:text="Description"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout> <!--My Third Main Linear Layout Ends  Here-->
+
+
+
+        <!--My Fourth Main LinearLayout Selection-->
+        <LinearLayout
+            android:layout_below="@+id/Linear_Layout_Option_3"
+
+            android:orientation="horizontal"
+            android:id="@+id/Linear_Layout_Option_4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            >
+
+            <!--Making Linear Layout For ImageView -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Linear_Layout_For_Image_View_For_Option_4"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="125dp"
+                android:layout_height="90dp"
+                >
+                <!--Image View For My Item-->
+                <ImageView
+                    android:id="@+id/Image_View_For_Option_4"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grill"></ImageView>
+
+
+
+
+            </LinearLayout> <!--Linear Layout For Image View Ended-->
+
+            <!--Making Linear Layout for TextView Item Name-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Layout_For_Item_Description_4"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <!--TextView for Item 1 In item_name_1-->
+                <TextView
+                    android:id="@+id/item_name_4"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Chicken Grill"
+                    android:textSize="10sp"
+
+                    ></TextView>
+
+                <!--Text View For Price-->
+                <TextView
+                    android:textSize="10sp"
+                    android:text="Price:200 RS"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/price_for_item_name_4"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    ></TextView>
+
+                <!--Making TextView for Description-->
+                <TextView
+                    android:id="@+id/item_description_4"
+                    android:textSize="10sp"
+                    android:text="Description"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

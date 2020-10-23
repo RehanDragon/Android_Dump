@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "598861440947",
+    "firebase_url": "https://fir-storageexam.firebaseio.com",
+    "project_id": "fir-storageexam",
+    "storage_bucket": "fir-storageexam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598861440947:android:60db20047a129a56",
+        "android_client_info": {
+          "package_name": "com.gnirt69.firebasestorageexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598861440947-b5qpitemcchbaanoajpm6ao99ukrafa5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gnirt69.firebasestorageexam",
+            "certificate_hash": "f2d1a379e4c67138c5371771278ede2677cfc2a1"
+          }
+        },
+        {
+          "client_id": "598861440947-9caoilheib6o10i809e0fhlqisd3381r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5f8iMQy3dLoV8OZj4rGQzuy386KegrEw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598861440947-9caoilheib6o10i809e0fhlqisd3381r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

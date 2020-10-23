@@ -1,0 +1,9 @@
+
+List of third party jar files used by the App42 Cloud Java SDK 0.8.6 version and their respective licenses are listed below: 
+
+
+commons-logging-1.1.1.jar		-	http://commons.apache.org/											-	http://www.apache.org/licenses/
+commons-logging-api-1.1.1.jar	-	http://commons.apache.org/											-	http://www.apache.org/licenses/
+httpclient-4.1.jar				-	http://hc.apache.org/httpcomponents-client-ga/httpclient-cache/		-	http://www.apache.org/licenses/
+httpcore-4.1.jar				-	http://hc.apache.org/httpcomponents-core-ga/httpcore/				-	http://www.apache.org/licenses/
+json-org.jar			-	http://mvnrepository.com/artifact/org.json/json/20090211							-	http://www.json.org/license.html

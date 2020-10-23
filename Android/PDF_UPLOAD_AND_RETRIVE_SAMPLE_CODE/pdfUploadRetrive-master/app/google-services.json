@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "648303715073",
+    "firebase_url": "https://pdfuploadretrive.firebaseio.com",
+    "project_id": "pdfuploadretrive",
+    "storage_bucket": "pdfuploadretrive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648303715073:android:9c5c0286d8313b0d793100",
+        "android_client_info": {
+          "package_name": "com.example.pdfuploadretrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648303715073-1reuvsr82kjdhc67h3erner78rmu7s0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pdfuploadretrive",
+            "certificate_hash": "c682db644881f451e3168490fe1d731c29193cd6"
+          }
+        },
+        {
+          "client_id": "648303715073-dfb6vdfo51efnrkvtarin0vcp7ltq4am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBI-4u8JbisHRp3ELy8w_GOBpU7OVl5Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648303715073-dfb6vdfo51efnrkvtarin0vcp7ltq4am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='GifImageApp_With_Switch'

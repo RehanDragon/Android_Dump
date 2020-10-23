@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_num_1"
+        android:text="Num1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+></TextView>
+
+
+    <EditText
+    android:id="@+id/ed_txt_num1"
+     android:layout_centerInParent="true"
+        android:layout_below="@+id/txt_num_1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+    ></EditText>
+
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@+id/ed_txt_num1"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_num_2"
+        android:text="Num2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+
+    <EditText
+        android:id="@+id/ed_txt_num2"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txt_num_2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        ></EditText>
+
+
+    <Button
+        android:layout_marginLeft="90dp"
+        android:id="@+id/Add"
+        android:layout_below="@+id/ed_txt_num2"
+        android:text="ADD"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" ></Button>
+
+    <Button
+    android:layout_marginLeft="150dp"
+    android:id="@+id/Sub"
+    android:layout_below="@+id/ed_txt_num2"
+    android:text="SUB"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" ></Button>
+
+
+    <Button
+        android:layout_marginLeft="209dp"
+        android:id="@+id/Mul"
+        android:layout_below="@+id/ed_txt_num2"
+        android:text="MUL"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" ></Button>
+
+    <Button
+        android:layout_marginLeft="265dp"
+        android:id="@+id/Div"
+        android:layout_below="@+id/ed_txt_num2"
+        android:text="DIV"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" ></Button>
+
+
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_ans"
+        android:layout_below="@+id/txt_num_2"
+        android:text="Ans"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+
+</RelativeLayout>
