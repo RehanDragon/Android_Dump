@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ya_relative_layout_ha"
+    tools:context=".MainActivity">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:text="Add Property"
+    android:id="@+id/add_property"
+    ></Button>
+
+
+    <!--mena relative ais lia lia ha ka main image ko center kr sku-->
+    <RelativeLayout
+        android:background="#000"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+
+
+            android:id="@+id/logout_image"
+
+            android:src="@drawable/white_logout"
+
+            ></ImageView>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
